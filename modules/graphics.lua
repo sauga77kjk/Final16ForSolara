@@ -1,29 +1,3 @@
---// remove new kick
-game:GetService("RunService").RenderStepped:Connect(function()
-    game:GetService("RunService"):SetRobloxGuiFocused(false)
-    for _, v in pairs(game:GetService("CoreGui"):GetChildren()) do
-        if v.Name == "RobloxPromptGui" and v:FindFirstChild("promptOverlay"):FindFirstChild("ErrorPrompt") then
-            v:Destroy()
-        end
-    end
-end)
-
---// display name remover + bar adder
-game:GetService("RunService").RenderStepped:Connect(function()
-    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
-        if v.Character ~= nil then
-            if v.Character:FindFirstChild("Humanoid") then
-                sethiddenproperty(v.Character.Humanoid, "HealthDisplayType", Enum.HumanoidHealthDisplayType.AlwaysOn)
-            end
-        end
-    end
-    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
-        pcall(function()
-            v.Character:WaitForChild("Humanoid").DisplayName = v.Name
-        end)
-    end
-end)
-
 --// setting up graphics to look older
 local effectsafter2016 = {"DepthOfFieldEffect", "Atmosphere"}
 for _, effect in pairs(game:GetService("Lighting"):GetChildren()) do
@@ -34,7 +8,9 @@ for _, effect in pairs(game:GetService("Lighting"):GetChildren()) do
     end
 end
 
-sethiddenproperty(game:GetService("Lighting"), "Technology", Enum.Technology.Compatibility) 
+pcall(function()
+    sethiddenproperty(game:GetService("Lighting"), "Technology", Enum.Technology.Compatibility) 
+end)
 
 game:GetService("Lighting").Ambient = Color3.fromRGB(0, 0, 0)
 game:GetService("Lighting").Brightness = 1

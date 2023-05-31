@@ -21,8 +21,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/ma
 local repo = "https://raw.githubusercontent.com/scotdotwtf/Final16/main/"
 if modules == nil then
     getgenv().modules = {"camera.lua", "displays.lua", "graphics.lua", "kick.lua", "mouse.lua", "playerlist.lua", "topbar.lua"}
+	print("[!] final16 | modules nil")
 end
 
-for module in pairs(modules) do
-    loadstring(game:HttpGet(repo.."/modules/"..module))()
-end
+for number, module in pairs(modules) do
+    loadstring(game:HttpGet(repo.."modules/"..module))()
+    warn("[*] final16 | loaded module, "..module)
+ end

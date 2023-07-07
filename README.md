@@ -7,7 +7,7 @@
     #+#            #+#     #+#   #+#+# #+#     #+# #+#          #+#  #+#    #+# 
     ###        ########### ###    #### ###     ### ########## ####### ########  
 
-   @scotdotwtf, made with love <3
+   @scotdotwtf, @colastee, made with love <3
 ```
 
 # what

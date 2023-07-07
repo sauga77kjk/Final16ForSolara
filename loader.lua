@@ -15,8 +15,9 @@
 
 ]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/main/modules/load.lua"))()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/mrlifeflam/Project-PList/main/Main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/main/modules/load.lua"))()
+
 
 --// vars and funcs
 local repo = "https://raw.githubusercontent.com/scotdotwtf/Final16/main/"

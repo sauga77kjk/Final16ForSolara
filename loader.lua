@@ -15,14 +15,13 @@
 
 ]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/mrlifeflam/Project-PList/main/Main.lua"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/main/modules/load.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/main/modules/loading_screen.lua"))()
 
 
 --// vars and funcs
 local repo = "https://raw.githubusercontent.com/scotdotwtf/Final16/main/"
 if modules == nil then
-    getgenv().modules = {"camera.lua", "displays.lua", "graphics.lua", "kick.lua", "mouse.lua", "playerlist.lua", "topbar.lua", "fdspoof.lua"}
+    getgenv().modules = {"camera.lua", "displays.lua", "graphics.lua", "kick.lua", "fd_spoof.lua", "ui_contents.lua"}
 	game:GetService("TestService"):Warn(false, "[!] final16 | modules nil")
 end
 

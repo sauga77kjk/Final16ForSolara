@@ -30,10 +30,9 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/ma
 ```
 - ### The cool thing with final 16 is that it loads all module even if you don't specify it. [Here's how I did it:](https://github.com/scotdotwtf/Final16/blob/840aacba54257522ff37d52794eb0243a7b62c2c/loader.lua#L22)
 ```lua
--- LINE 16, scotdotwtf/Final16/loader.lua
-if modules == nil then
-    getgenv().modules = {"camera.lua", "displays.lua", "graphics.lua", "kick.lua", "mouse.lua", "playerlist.lua", "topbar.lua", "fdspoof.lua"}
-    game:GetService("TestService"):Warn(false, "[!] final16 | modules nil")
+-- * LINE 16, scotdotwtf/Final16/loader.lua
+modules == nil then
+    getgenv().modules = { --> modules }
 end
 ```
 

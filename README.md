@@ -32,7 +32,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/scotdotwtf/Final16/ma
 ```lua
 -- * LINE 16, scotdotwtf/Final16/loader.lua
 modules == nil then
-    getgenv().modules = { --> modules }
+    getgenv().modules = { } --> modules
 end
 ```
 

@@ -4,6 +4,12 @@
 
 ]]
 
+spawn(function()
+	local LoadingGui = game:WaitForChild("CoreGui"):WaitForChild("RobloxLoadingGui")
+	LoadingGui.Enabled = false
+	LoadingGui:Destroy()
+end)
+
 -- Creates the generic "ROBLOX" loading screen on startup
 -- Written by ArceusInator & Ben Tkacheff, 2014
 

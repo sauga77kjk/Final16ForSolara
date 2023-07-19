@@ -677,7 +677,8 @@ function fadeAndDestroyBlackFrame(blackFrame)
 	spawn(function()
 		local infoFrame = blackFrame:FindFirstChild("InfoFrame")
 		local graphicsFrame = blackFrame:FindFirstChild("GraphicsFrame")
-
+		
+if blackFrame:FindFirstChild("InfoFrame") then
 		local infoFrameChildren = infoFrame:GetChildren()
 		local transparency = 0
 		local rateChange = 1.8
@@ -717,6 +718,7 @@ function fadeAndDestroyBlackFrame(blackFrame)
 			stopListeningToRenderingStep()
 			blackFrame:Destroy()
 		end
+end
 	end)
 end
 

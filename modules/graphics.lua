@@ -13,7 +13,7 @@ pcall(function()
 end)
 
 game:GetService("Lighting").Ambient = Color3.fromRGB(0, 0, 0)
-game:GetService("Lighting").Brightness = 1
+game:GetService("Lighting").Brightness -= 1
 game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(127, 127, 127)
 
 --// studs (texture setup/base from beyond 5d's project)
@@ -31,4 +31,4 @@ for _, v in ipairs(game:GetDescendants()) do
 end
 
 wait(0.5)
-settings().Rendering.QualityLevel = 16
+--settings().Rendering.QualityLevel = 16

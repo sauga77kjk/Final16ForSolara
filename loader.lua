@@ -27,6 +27,8 @@ if modules == nil then
 end
 
 for number, module in pairs(modules) do 
-    loadstring(game:HttpGet(repo.."modules/"..module))()
-    game:GetService("TestService"):Message("[*] final16 | loaded module, "..module)
+    spawn(function() --> I absolutely HATE how uly this looks but whatever
+        loadstring(game:HttpGet(repo.."modules/"..module))()
+        game:GetService("TestService"):Message("[*] final16 | loaded module, "..module)
+    end)
 end

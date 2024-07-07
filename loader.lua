@@ -15,9 +15,6 @@
 
 ]]
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/sauga77kjk/Final16ForSolara/main/modules/loading_screen.lua"))()
-
-
 --// vars and funcs
 local repo = "https://raw.githubusercontent.com/sauga77kjk/Final16ForSolara/main/"
 if modules == nil then

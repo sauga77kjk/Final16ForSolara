@@ -4,6 +4,10 @@
 
 ]]
 
+local function sethiddenproperty(obj,pro,val)
+obj[pro]=val
+end
+
 spawn(function()
 	local LoadingGui = game:WaitForChild("CoreGui"):WaitForChild("RobloxLoadingGui")
 	LoadingGui.Enabled = false

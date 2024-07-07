@@ -25,7 +25,7 @@ end
 
 for number, module in pairs(modules) do 
     spawn(function() --> I absolutely HATE how uly this looks but whatever
-        loadstring(game:HttpGet(repo.."modules/"..module))()
+        pcall(function()loadstring(game:HttpGet(repo.."modules/"..module))()end) --> :( look at this frowny face his sad because the modules are spamming errors so i added this to help him :)
         game:GetService("TestService"):Message("[*] final16 | loaded module, "..module)
     end)
 end

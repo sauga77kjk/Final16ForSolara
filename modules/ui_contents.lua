@@ -21,7 +21,7 @@ function releasefocus()
 end
 
 -- LEAVEGAMEPAGE START
-keypress(0x1B);releasefocus()
+--[[keypress(0x1B);releasefocus()
 wait()
 keypress(0x4C);releasefocus()
 keypress(0x1B);releasefocus()
@@ -36,7 +36,7 @@ keypress(0x09)
 keypress(0x09)
 task.wait(0.0001)
 keypress(0x1B);releasefocus() -- ESC
---releasefocus()
+--releasefocus()]]
 --END MENU
 task.wait(0.0001)
 --START CURSOR SUPPORT

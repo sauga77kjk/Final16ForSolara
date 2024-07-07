@@ -1,12 +1,12 @@
 --// display name remover + bar adder
-local function sethiddenproperty(obj,pro,val)
+local function sethiddenproperty2(obj,pro,val)
 obj[pro]=val
 end
 game:GetService("RunService").RenderStepped:Connect(function()
     for _, v in pairs(game:GetService("Players"):GetPlayers()) do
         if v.Character ~= nil then
             if v.Character:FindFirstChild("Humanoid") then
-                sethiddenproperty(v.Character.Humanoid, "HealthDisplayType", Enum.HumanoidHealthDisplayType.AlwaysOn)
+                sethiddenproperty2(v.Character.Humanoid, "HealthDisplayType", Enum.HumanoidHealthDisplayType.AlwaysOn)
             end
         end
     end

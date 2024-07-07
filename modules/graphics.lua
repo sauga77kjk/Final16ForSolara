@@ -1,4 +1,7 @@
 --// setting up graphics to look older
+local function sethiddenproperty(obj,pro,val)
+obj[pro]=val
+end
 local effectsafter2016 = {"DepthOfFieldEffect", "Atmosphere"}
 for _, effect in pairs(game:GetService("Lighting"):GetChildren()) do
     for _, not2016effect in pairs(effectsafter2016) do

@@ -157,6 +157,7 @@ export.SetPlayerIsHidden = function(self, name, bool)
 end
 
 _G.PlayerListAPI = export
+export.AddAdmin("UserTermedYouRev", "rbxassetid://1030775391")
 
 local Images = {
 	bottomDark = '94691904',
